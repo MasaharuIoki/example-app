@@ -1,0 +1,72 @@
+@charset "utf-8";
+.body {
+    margin: 10px;
+    padding: 0px;
+    font-size: 15px;
+}
+span{
+    display:inline-block;
+}
+#res1{
+    text-align: right;
+    font-weight: bold;
+}
+.ex1{
+    margin: 0px;
+    border: 3px solid black;
+    height: 60px;
+    width: 100%;
+}
+.ex2{
+    margin: 0px;
+    border: 3px solid black;
+    height: 80px;
+    width: 100%;
+}
+#taitol {
+    background:#1e84eb;
+    width: unset;
+    border: 2px solid #000000;
+    text-align:center;
+    padding: 10px;
+    color:#ffffff;
+    margin: auto;
+}
+#box1{
+    border: 3px solid black;
+    padding: 0.1em; 
+    float: left;  
+}
+#box2 {
+    border: 3px solid black;
+    padding: 0.1em;
+}
+#box3 {
+    border: 3px solid black;
+    padding: 0.1em;
+    float: left;
+    margin: -2.5px 0 0px 0px;
+}
+#box4 {
+    border: 3px solid black;
+    padding: 0.1em;
+    margin: -2.5px 0px 0px 0px;
+}
+#box5{
+    border: 3px solid black;
+    padding: 0.1em;
+    float: left;
+    margin: -2.5px -2.5px 0px 0px;
+}
+#box6 {
+        border: 3px solid black;
+        padding: 0.1em;
+        margin: -2.5px 0px 0px 0px;
+}
+ #box7,#box8{
+        border: 3px solid black;
+        padding: 0.1em;
+        border-collapse: collapse;
+        float: left;
+}
+       
