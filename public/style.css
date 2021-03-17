@@ -1,0 +1,98 @@
+@charset "utf-8";
+.body {
+    margin: 10px;
+padding: 0px;
+font-size: 15px;
+}
+span{
+    display:inline-block;
+}
+
+#taitol {
+    background:#1e84eb;
+    width: unset;
+    border: 2px solid #000000;
+    text-align:center;
+    padding: 10px;
+    color:#ffffff;
+    margin: auto;
+}
+#box1{
+    border: 3px solid black;
+    display: table-cell;
+    padding: 0.1em;
+    /* border-collapse: collapse; */
+    float: left;
+    margin: auto;
+    /* margin: 0 -3px -3px 0; */
+    display: flex;
+    /* display: inline-block; */
+}
+#box2 {
+    border: 3px solid black;
+    /* display: table-cell; */
+    /* border-collapse: collapse; */
+    padding: 0.1em;
+    /* width: 100%; */
+    margin: 0px 0px 0px 0px;
+    /* flex: auto; */
+    /* white-space: nowrap; */
+    /* margin: auto; */
+    /* float: left; */
+    /* border-collapse: collapse; */
+}
+#box3 {
+    /* width: auto; */
+    border: 3px solid black;
+    display: table-cell;
+    padding: 0.1em;
+    float: left;
+    /* display: inline-block; */
+    white-space: nowrap;
+    margin: -2.5px 0 0px 0px;
+    /* margin: auto; */
+    /* left:  0; */
+    /* display: inline-block; */
+}
+#box4 {
+    border: 3px solid black;
+    /* display: table-cell; */
+    padding: 0.1em;
+    /* display: flex; */
+    /* width: 100%; */
+    /* display: inline-block; */
+    margin: auto;
+    margin: -2.5px 0px 0px 0px;
+    /* float: left; */
+    /* display: inline-block; */
+}
+#box5{
+    border: 3px solid black;
+    padding: 0.1em;
+    /* display: table-cell; */
+    /* border-collapse: collapse; */
+    float: left;
+    margin: -2.5px -2.5px 0px 0px;
+    /* margin: auto; */
+    /* display: inline-block; */
+}
+#box6 {
+        border: 3px solid black;
+        /* display: flex; */
+        /* border-collapse: collapse; */
+        padding: 0.1em;
+        /* width: 100%; */
+        /* flex: auto; */
+        /* white-space: nowrap; */
+        /* float: none; */
+        margin: inherit;
+        margin: -2.5px 0px 0px 0px;
+        /* border-collapse: collapse; */
+}
+ #box7,#box8{
+        border: 3px solid black;
+        padding: 0.1em;
+        border-collapse: collapse;
+        float: left;
+}
+   
