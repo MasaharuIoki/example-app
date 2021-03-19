@@ -35,7 +35,7 @@ class QuestionslistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        recquest()->input('choice');
     }
 
     /**
