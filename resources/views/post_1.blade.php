@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>post_1.php</title>
+<title>post_1.blade.php</title>
 </head>
 <body>
  
