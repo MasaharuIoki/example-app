@@ -17,7 +17,7 @@ class CreateQuestionslistsTable extends Migration
             $table->inctements('id');
             $table->string('name');
             $teble->string('gender');
-            $table->integer(category_id);
+            $table->integer('category_id');
             $table->timestamps();
         });
     }
