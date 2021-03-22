@@ -1,6 +1,7 @@
+
 @extends('layout')
- 
- @section('content')
+
+@section('content')
 <h1>POST受信</h1>
 <?php if(!isset($_POST['choice'])){ ?>
 
