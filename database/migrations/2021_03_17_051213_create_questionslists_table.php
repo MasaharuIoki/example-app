@@ -14,8 +14,10 @@ class CreateQuestionslistsTable extends Migration
     public function up()
     {
         Schema::create('questionslists', function (Blueprint $table) {
-            $table->id();
+            $table->inctements('id');
+            $table->string('name');
             $teble->string('gender');
+            $table->integer(category_id);
             $table->timestamps();
         });
     }

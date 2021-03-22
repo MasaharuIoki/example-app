@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('layout')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url('/style.css')  }}">
-</head>
-<body>
+@section('content')
     <form method="post" action="post_1.blade.php">        
     <div id="res1">    
     </div>
@@ -414,7 +408,5 @@
             
                 <input type="text" name="sitename" size="15" value="TRYPHP"/>
                 <input type="submit" value="送信"/> 
-    </form>
-           
-</body>
-</html>
+    </form>           
+@endsection
