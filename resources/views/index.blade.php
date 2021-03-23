@@ -1,7 +1,13 @@
-@extends('layout')
+<!DOCTYPE html>
+<html lang="ja">
 
-@section('content')
-    <form method="post" action="post_1.blade.php">        
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <form method="post" action="post_1.php">        
     <div id="res1">    
     </div>
     <div id="taitol">
@@ -391,15 +397,11 @@
             </div>
             <script type="text/javascript">
                 var n, y, m, d, outData;
-
                 n = new Date();
-
                 y = n.getFullYear();
                 m = n.getMonth() + 1;
                 d = n.getDate();
-
                 outData = y + "年" + m + "月" + d + "日";
-
                 var target = document.getElementById("res1");
                 target.innerHTML = outData;
             
@@ -408,5 +410,7 @@
             
                 <input type="text" name="sitename" size="15" value="TRYPHP"/>
                 <input type="submit" value="送信"/> 
-    </form>           
-@endsection
+    </form>
+           
+</body>
+</html>

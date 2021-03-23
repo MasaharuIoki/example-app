@@ -1,7 +1,12 @@
 
-@extends('layout')
-
-@section('content')
+@ -1,11 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>post_1.blade.php</title>
+</head>
+<body>
 <h1>POST受信</h1>
 <?php if(!isset($_POST['choice'])){ ?>
 
@@ -55,4 +60,5 @@ $string = $_POST;
 var_dump( file_put_contents($filename, $string, FILE_APPEND | LOCK_EX));
 
 ?>
-@endsection
+</body>
+</html>
