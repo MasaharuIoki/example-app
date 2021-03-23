@@ -12,19 +12,7 @@ class QuestionslistController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        /*$choice = $request->box1;
-        $choice2 = $request->box2;
-        $choice3 = $request->box3;
-        $choice4 = $request->box4;
-        $choice5 = $request->box5;
-        $choice6 = $request->box6;
-        $ex1 = $request->ex1;
-        $ex2 = $request->ex2;
-        $choice7 = $request->box7;
-        $Item = new Item;
-        $c1->c_box1 =  */
+    public function index(){
         $choice = $request->choice;
         $choice2 = $request->choice2;
         $choice3 = $request->choice3;
@@ -101,6 +89,10 @@ class QuestionslistController extends Controller
         $Item = new Item;
         $Item->c_ex2 = $ex2;
         $Item->save();
+
+      
+            
+        
     }
 
    /*    
