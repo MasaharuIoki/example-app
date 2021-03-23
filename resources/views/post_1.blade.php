@@ -20,13 +20,13 @@
  <?php var_dump($_POST['choice3']); ?>
  </pre>
  <pre>
- <?php var_dump($_POST['example1']); ?>
+ <?php var_dump($_POST['example3']); ?>
  </pre>
  <pre>
  <?php var_dump($_POST['choice4']); ?>
  </pre>
  <pre>
- <?php var_dump($_POST['example2']); ?>
+ <?php var_dump($_POST['example4']); ?>
  </pre>
  <pre>
  <?php var_dump($_POST['choice5']); ?>
@@ -35,13 +35,13 @@
  <?php var_dump($_POST['choice6']); ?>
  </pre>
  <pre>
- <?php var_dump($_POST['example3']); ?>
+ <?php var_dump($_POST['example1']); ?>
  </pre>
  <pre>
  <?php var_dump($_POST['choice7']); ?>
  </pre>
  <pre>
- <?php var_dump($_POST['example4']); ?>
+ <?php var_dump($_POST['example2']); ?>
  </pre>
 
  <?php } ?>
