@@ -302,7 +302,7 @@
                     その他にもございましたらご記入ください。
                 </strong>
                 <br />
-                <textarea class="ex3" name="example1" cols="30" rows="10">
+                <textarea class="ex1" name="example1" cols="30" rows="10">
                 </textarea>
             </p>
         </div>
@@ -367,7 +367,7 @@
                 <span>
                     △△が使いにくいので改善できないか　など
                 </span>
-                <textarea class="ex4" name="example2" cols="30" rows="10">
+                <textarea class="ex2" name="example2" cols="30" rows="10">
                 </textarea>
                 <p>
 
