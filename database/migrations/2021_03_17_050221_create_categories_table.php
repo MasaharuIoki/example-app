@@ -15,7 +15,17 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->inctements('id');
-            $teble->string('gender');
+            $teble->string('choice');
+            $teble->string('choice2');
+            $teble->string('choice3');
+            $teble->string('example1');
+            $teble->string('choice4');
+            $teble->string('example2');
+            $teble->string('choice5');
+            $teble->string('choice6');
+            $teble->string('example3');
+            $teble->string('choice7');
+            $teble->string('example4');
             $table->timestamps();
         });
     }

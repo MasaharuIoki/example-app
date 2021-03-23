@@ -152,7 +152,7 @@
                     <label for="c16">
                         その他
                     </label>
-                    <input type="text" name="example3" size="10" maxlength="7" value=""/>
+                    <input type="text" name="example1" size="10" maxlength="7" value=""/>
                 </span>
             </div>
             <br />
@@ -206,7 +206,7 @@
                     <input type="radio" name="choice4" id="c24" value="その他"/>
                     <label for="c24">
                         その他
-                        <input type="text" name="example4" size="21" maxlength="12" value=""/>
+                        <input type="text" name="example2" size="21" maxlength="12" value=""/>
                     </label>
                 </span>
             </div>
@@ -302,7 +302,7 @@
                     その他にもございましたらご記入ください。
                 </strong>
                 <br />
-                <textarea class="ex1" name="example1" cols="30" rows="10">
+                <textarea class="ex3" name="example3" cols="30" rows="10">
                 </textarea>
             </p>
         </div>
@@ -367,7 +367,7 @@
                 <span>
                     △△が使いにくいので改善できないか　など
                 </span>
-                <textarea class="ex2" name="example2" cols="30" rows="10">
+                <textarea class="ex4" name="example4" cols="30" rows="10">
                 </textarea>
                 <p>
 
