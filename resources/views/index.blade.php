@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
-    <form method="post" action="post_1.php">        
+    <form method="post" action="post_1.blade.php">        
     <div id="res1">    
     </div>
     <div id="taitol">
