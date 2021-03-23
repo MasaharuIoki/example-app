@@ -45,7 +45,7 @@
  </pre>
 
  <?php } ?>
- <form id="form1" name="form1" method="post" action="post_1.php">
+ <form id="form1" name="form1" method="post" action="post_1.blade.php">
  <input type="text" name="text" id="textField" />
  <input type="submit" value="書き込む" />
 <?php
