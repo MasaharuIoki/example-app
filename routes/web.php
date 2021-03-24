@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
-Route::get('/questions','app\Http\Controllers\QuestionslistController@index');
-Route::get('/questionslist','app\Http\Controllers\QuestionslistController@show');
+// アクセス時のルーティング!省略しない
+Route::get('/questions', 'App\Http\Controllers\QuestionslistController@index');
+// フォーム送信時のルーティング!
+Route::get('/questions', 'App\Http\Controllers\QuestionslistController@receiveData');

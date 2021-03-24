@@ -1,6 +1,12 @@
-@extends('layout')
+<!DOCTYPE html>
+<html lang="ja">
 
-@section('content')
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url('/style.css')  }}">
+    </head>
+    <body>
     <form method="post" action="post_1.blade.php">        
     <div id="res1">    
     </div>
@@ -25,6 +31,22 @@
             </span>
         </div>
         <br />
+        @if ($errors->any())
+            <div class="errors">
+                <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+                </ul>
+            </div>
+        @endif
+        @isset ($status)
+            <div class="complete">
+                <p>
+                バリデーションを通過しました
+                </p>
+            </div>
+        @endisset
         <div>
             <strong>
                 お客様について
@@ -405,5 +427,5 @@
                 <input type="text" name="imputName" size="15" value="TRYPHP"/>
                 <input type="submit" value="送信"/> 
     </form>
-           
-@endsection
+    </body>
+</html>
