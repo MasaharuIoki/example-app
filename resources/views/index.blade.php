@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{ url('/style.css')  }}">
     </head>
     <body>
-    <form method="post" action="post_1.blade.php">        
+    <form method="post" action="" enctype="multipart/form-data">        
     <div id="res1">    
     </div>
     <div id="taitol">
