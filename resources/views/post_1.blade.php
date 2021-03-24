@@ -81,9 +81,16 @@
  </pre>
 
  <?php } ?>
- <form id="form1" name="form1" method="post" action="post_1.php">
+ <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
  <input type="text" name="text" id="textField" />
  <input type="submit" value="書き込む" />
+ 
+ <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="text" name="message" value="Hello"/><br>
+    <input type="file" name="file"/><br>
+    <input type="submit" value="書き込む"/>
+</form>
+
 <?php
 $filename = "write2.txt";
 $string = $_POST;
