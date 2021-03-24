@@ -39,13 +39,13 @@
             </div>
             <div id="box2">
                 <span>
-                    <input type="radio" name="choice" id="c1" value="男性"/>
+                    <input type="radio" name="choice1" id="c1" value="男性"/>
                     <label for="c1">
                         男性　
                     </label>
                 </span>
                 <span>
-                    <input type="radio" name="choice" id="c2" value="女性"/>
+                    <input type="radio" name="choice1" id="c2" value="女性"/>
                     <label for="c2">
                         女性　
                     </label>
@@ -402,7 +402,7 @@
             </script>
             <h1>POST送信</h1>
             
-                <input type="text" name="sitename" size="15" value="TRYPHP"/>
+                <input type="text" name="imputName" size="15" value="TRYPHP"/>
                 <input type="submit" value="送信"/> 
     </form>
            

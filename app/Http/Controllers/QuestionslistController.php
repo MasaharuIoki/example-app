@@ -13,6 +13,7 @@ class QuestionslistController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
+        return view('index',['questions => $questions']);
         $choice = $request->choice;
         $choice2 = $request->choice2;
         $choice3 = $request->choice3;
