@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\questionslist;
+use App\Http\Requests\SampleValiRequest;
 use Illuminate\Http\Request;
 
 class QuestionslistController extends Controller
@@ -12,22 +11,12 @@ class QuestionslistController extends Controller
     {
         return view('index');
     }
-    public function receiveData(Request $request)
+    public function receiveData(SampleValiRequest $request)
     {
         $request->questiondate([
 
         
-        'choice1'=>'required',
-        'choice2'=>'required',
-        'choice3'=>'required',
-        'ex1' => '|string|max:255',
-        'choice4'=>'required',
-        'ex2' => '|string|max:255',
-        'choice5'=>'required',
-        'choice6'=>'required',
-        'example3' => '|string|max:255',
-        'choice7'=>'required',
-        'example4' => '|string|max:255',
+       
         ]);
         return view('sample_vali', ['status' => true]);
     }
