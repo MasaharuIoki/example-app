@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Requests\SampleValiRequest;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\SampleValiRequest;     
 
 class QuestionslistController extends Controller
 {
@@ -13,11 +14,6 @@ class QuestionslistController extends Controller
     }
     public function receiveData(SampleValiRequest $request)
     {
-        $request->questiondate([
-
-        
-       
-        ]);
         return view('sample_vali', ['status' => true]);
     }
   }
