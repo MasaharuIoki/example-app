@@ -2,6 +2,10 @@
 
 @section('content')
 <h1>POST受信</h1>
+<p>{{ request()->input('$choice') }}</p>
+@forcach($questions as $question)
+    <p>{{$question->content}}</p>
+@endforeach
 <?php if(!isset($_POST['choice'])){ ?>
 
  
@@ -11,7 +15,7 @@
 
  <strong>$_POST['choice']の構造を確認</strong><br/>
  <pre>
- <?php var_dump($_POST['choice']); ?>
+ <?php var_dump($_POST['choice1']); ?>
  </pre>
  <pre>
  <?php var_dump($_POST['choice2']); ?>
@@ -45,13 +49,12 @@
  </pre>
 
  <?php } ?>
- <form id="form1" name="form1" method="post" action="post_1.blade.php">
+ <form id="form1" name="form1" method="post" action="post_1.php">
  <input type="text" name="text" id="textField" />
  <input type="submit" value="書き込む" />
 <?php
 $filename = "write2.txt";
 $string = $_POST;
 var_dump( file_put_contents($filename, $string, FILE_APPEND | LOCK_EX));
-
 ?>
 @endsection
