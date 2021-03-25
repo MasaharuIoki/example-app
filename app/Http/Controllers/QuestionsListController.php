@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\QuestionsLists;
+use App\Models\QuestionsList;
 use Illuminate\Http\Request;
 
-class QuestionsListsController extends Controller
+class QuestionsListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,22 +18,21 @@ class QuestionsListsController extends Controller
     }
     public function receiveData(SampleValiRequest $request)
     {
-        $request->questionsdate([
-
-    
-        'choice1'=>'required',
-        'choice2'=>'required',
-        'choice3'=>'required',
-        'ex1' => '|string|max:255',
-        'choice4'=>'required',
-        'ex2' => '|string|max:255',
-        'choice5'=>'required',
-        'choice6'=>'required',
-        'example3' => '|string|max:255',
-        'choice7'=>'required',
-        'example4' => '|string|max:255',
+        $request->questionslistdate
+        ([
+            'choice1'=>'required',
+            'choice2'=>'required',
+            'choice3'=>'required',
+            'ex1' => '|string|max:255',
+            'choice4'=>'required',
+            'ex2' => '|string|max:255',
+            'choice5'=>'required',
+            'choice6'=>'required',
+            'example3' => '|string|max:255',
+            'choice7'=>'required',
+            'example4' => '|string|max:255',
         ]);
-
+        
         return view('sample_vali', ['status' => true]);
     }
 
@@ -61,10 +60,10 @@ class QuestionsListsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\QuestionsLists  $questionsLists
+     * @param  \App\Models\QuestionsList  $questionsList
      * @return \Illuminate\Http\Response
      */
-    public function show(QuestionsLists $questionsLists)
+    public function show(QuestionsList $questionsList)
     {
         //
     }
@@ -72,10 +71,10 @@ class QuestionsListsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\QuestionsLists  $questionsLists
+     * @param  \App\Models\QuestionsList  $questionsList
      * @return \Illuminate\Http\Response
      */
-    public function edit(QuestionsLists $questionsLists)
+    public function edit(QuestionsList $questionsList)
     {
         //
     }
@@ -84,10 +83,10 @@ class QuestionsListsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\QuestionsLists  $questionsLists
+     * @param  \App\Models\QuestionsList  $questionsList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, QuestionsLists $questionsLists)
+    public function update(Request $request, QuestionsList $questionsList)
     {
         //
     }
@@ -95,10 +94,10 @@ class QuestionsListsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\QuestionsLists  $questionsLists
+     * @param  \App\Models\QuestionsList  $questionsList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(QuestionsLists $questionsLists)
+    public function destroy(QuestionsList $questionsList)
     {
         //
     }
