@@ -18,7 +18,7 @@ class SampleValiRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-     *
+     * 'ex1' => '|string|max:255',は'ex1' => 'string|max:255',
      * @return array
      */
     public function rules()
