@@ -14,6 +14,7 @@ class CreateQuestionslistsTable extends Migration
     public function up()
     {
         Schema::create('questionslists', function (Blueprint $table) {
+            $table->id();
             $table->string('choice1');
             $table->string('choice2');
             $table->string('choice3');
