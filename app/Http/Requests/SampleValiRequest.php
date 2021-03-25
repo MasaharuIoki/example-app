@@ -27,14 +27,14 @@ class SampleValiRequest extends FormRequest
         'choice1'=>'required',
         'choice2'=>'required',
         'choice3'=>'required',
-        'ex1' => '|string|max:255',
+        'ex1' => 'string|max:255',
         'choice4'=>'required',
-        'ex2' => '|string|max:255',
+        'ex2' => 'string|max:255',
         'choice5'=>'required',
         'choice6'=>'required',
-        'example3' => '|string|max:255',
+        'example3' => 'string|max:255',
         'choice7'=>'required',
-        'example4' => '|string|max:255',
+        'example4' => 'string|max:255',
         ];
     }
     public function messages()
