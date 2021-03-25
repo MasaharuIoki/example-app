@@ -12,22 +12,35 @@ dump($request);
 //Route::get('/questions', 'App\Http\Controllers\QuestionslistController@index');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@index');
 // フォーム送信時のルーティング!
-Route::post('/questions2', function ($request) {
+Route::get('/questions2', function ($request) {
 dump($request);
 })->name('questions2');
 //Route::post('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
 
-Route::get('/aaa', function () {
+Route::get('aaa', function () {
 
-    $item = new \App\Models\QuestionsList;
-    
-    $item->choice1 = 1;
-    $item->save();
+    $a = new \App\Models\QuestionsList();
+
+    $a->choice1 = '男性';
+    $a->choice2 = "10代";
+    $a->choice3 = "主婦";
+    $a->example1 = "その他";
+    $a->choice4 = "テレビ";
+    $a->example2 = "その他";
+    $a->choice5 = "ほぼ毎日(週に4~7回)";
+    $a->choice6 = "他社より安いから";
+    $a->example3 = "その他";
+    $a->choice7 = "極めて満足";
+    $a->example4 = "その他";
+   
+
+    //$item->choice1 = 1;
+    $a->save();
      
     // ※項目が足りて得ないのでエラーがでます。
      
-    dump($item);
+    dump($a);
      
     return "";
     });
