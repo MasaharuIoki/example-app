@@ -13,7 +13,7 @@ Route::get('/questions/1', 'App\Http\Controllers\QuestionslistController@receive
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
 Route::get('/aaa', function () {
 
-    $item = new \App\Models\Questionslist;
+    $item = new \App\Models\Questionslists;
     
     $item->choice1 = 1;
     $item->save();
