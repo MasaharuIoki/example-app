@@ -9,11 +9,11 @@ Route::get('/', function () {
 Route::get('/questions', 'App\Http\Controllers\QuestionslistController@index');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@index');
 // フォーム送信時のルーティング!
-Route::get('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
+Route::post('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
 Route::get('/aaa', function () {
 
-    $item = new \App\Models\Questionslists;
+    $item = new \App\Models\QuestionsList;
     
     $item->choice1 = 1;
     $item->save();

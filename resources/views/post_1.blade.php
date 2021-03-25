@@ -45,7 +45,7 @@
  </pre>
 
  <?php } ?>
- <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+ <form id="form1" name="form1" method="get" action="/aaa" enctype="multipart/form-data">
  <input type="text" name="text" id="textField" />
  <input type="submit" value="書き込む" />
  
