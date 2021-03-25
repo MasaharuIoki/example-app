@@ -14,7 +14,7 @@ class CreateQuestionsListsTable extends Migration
     public function up()
     {
         Schema::create('questions_lists', function (Blueprint $table) {
-            $table->id('inctements')->comment('主キー');
+            $table->id()->comment('主キー');
             $table->string('choice1')->comment('性別');
             $table->string('choice2')->comment('年齢');
             $table->string('choice3')->comment('ご職業');
