@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ url('/style.css')  }}">
     </head>
     <body>
-    <form method="post" action="/upload" enctype="multipart/form-data">        
+    <form method="post" action="/aaa" enctype="multipart/form-data">        
     <div id="res1">    
     </div>
     <div id="taitol">
