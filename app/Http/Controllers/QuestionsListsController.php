@@ -14,7 +14,27 @@ class QuestionsListsController extends Controller
      */
     public function index()
     {
-        //
+        return view('index');
+    }
+    public function receiveData(SampleValiRequest $request)
+    {
+        $request->questionsdate([
+
+    
+        'choice1'=>'required',
+        'choice2'=>'required',
+        'choice3'=>'required',
+        'ex1' => '|string|max:255',
+        'choice4'=>'required',
+        'ex2' => '|string|max:255',
+        'choice5'=>'required',
+        'choice6'=>'required',
+        'example3' => '|string|max:255',
+        'choice7'=>'required',
+        'example4' => '|string|max:255',
+        ]);
+
+        return view('sample_vali', ['status' => true]);
     }
 
     /**
