@@ -4,42 +4,6 @@
 
 <h1>POST受信</h1>
 
-@forcach($questions as $question)
-<p>{{ request()->input('$choice1') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice2') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice3') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$example3') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice4') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$example4') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice5') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice6') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$example1') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$choice7') }}</p>
-@endforeach
-@forcach($questions as $question)
-<p>{{ request()->input('$example2') }}</p>
-@endforeach
-
-
-
 <?php if(!isset($_POST['choice1'])){ ?> 
  選択されていません。<br/>
  
