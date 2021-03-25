@@ -11,7 +11,7 @@ Route::get('/questions', 'App\Http\Controllers\QuestionslistController@index');
 // フォーム送信時のルーティング!
 Route::get('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
-Route:get('aaa', function () {
+Route::get('aaa', function () {
 
     $item = new \App\Models\Questionslist;
     
