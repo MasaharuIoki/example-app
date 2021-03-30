@@ -18,6 +18,11 @@ dump($request);
 //Route::post('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
 
+//
+
+
+//
+/*
 Route::get('aaa', function () {
 
     $a = new \App\Models\QuestionsList();
@@ -43,4 +48,5 @@ Route::get('aaa', function () {
     dump($a);
      
     return "";
-    });
+    }); 
+    */
