@@ -4,6 +4,33 @@
 
 <h1>POST受信</h1>
 
+<?php
+    $pdo = new PDO ('mysql:host=localhost; dbname=questions_lists; charset=utf8','root','');
+    
+    $sql = 'SELECT * FORM quetions';
+    $seatment = $pdo->SampleValiRequest($questionsList);
+    $statment->execute();
+
+    if(isset($_REQUEST['id'])){
+        $id=$_REQUEST['id'];
+    }
+    { 
+    "request"()->input('$choice1') ;
+    "request"()->input('$choice2') ;
+    "request"()->input('$choice3') ; 
+    "request"()->input('$example3') ; 
+    "request"()->input('$choice4') ; 
+    "request"()->input('$example4') ; 
+    "request"()->input('$choice5') ; 
+    "request"()->input('$choice6') ; 
+    "request"()->input('$example1') ; 
+    "request"()->input('$choice7') ;
+    "request"()->input('$example2') ; 
+    }
+?>
+
+
+
 <?php if(!isset($_POST['choice1'])){ ?> 
  選択されていません。<br/>
  
@@ -60,4 +87,5 @@ $filename = "write2.txt";
 $string = $_POST;
 var_dump( file_put_contents($filename, $string, FILE_APPEND | LOCK_EX));
 ?>
+
 @endsection

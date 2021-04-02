@@ -15,13 +15,13 @@ dump($request);
 Route::get('/questions2', function ($request) {
 dump($request);
 })->name('questions2');
-//Route::post('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
+Route::post('/questions/1', 'App\Http\Controllers\QuestionslistController@receiveData');
 //Route::get('/questions', 'App\Http\Controllers\SampleValiRequest@receiveData');
 
 //
 
 //
-/*
+
 Route::get('aaa', function () {
 
     $a = new \App\Models\QuestionsList();
@@ -48,4 +48,4 @@ Route::get('aaa', function () {
      
     return "";
     }); 
-    */
+    
